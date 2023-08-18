@@ -11,13 +11,15 @@ class TableViewCell : UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
    
+    @IBOutlet weak var rate: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var locationAndRateLabel: UILabel!
+    @IBOutlet weak var location: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    var imageList:[String]?
     
     override func awakeFromNib() {
             super.awakeFromNib()
@@ -46,19 +48,16 @@ class TableViewCell : UITableViewCell {
 extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return residentalTableViewData[collectionView.tag].imagesList.count
+
+        // itemlerın resim sayısı
+        return (imageList?.count)!
     }
     
-    
-    
-    
+   
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath)  as! CollectionViewCell
-        
-        collectionCell.imageView.image = UIImage(named: residentalTableViewData[collectionView.tag].imagesList[indexPath.row])
-        
-       
+        collectionCell.imageView.image = UIImage(named: imageList![indexPath.row])
         return collectionCell
     }
     
