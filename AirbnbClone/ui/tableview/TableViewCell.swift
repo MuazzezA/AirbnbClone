@@ -11,7 +11,7 @@ class TableViewCell : UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
    
-    //@IBOutlet weak var pageControl: CustomPageControl!
+    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var locationAndRateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
@@ -29,7 +29,7 @@ class TableViewCell : UITableViewCell {
         
         collectionView.isPagingEnabled = true
         
-        //pageControl.numberOfPages = residentalTableViewData[collectionView.tag].imagesList.count
+        pageControl.numberOfPages = residentalTableViewData[collectionView.tag].imagesList.count
         
         
     }
@@ -57,8 +57,6 @@ extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath)  as! CollectionViewCell
         
         collectionCell.imageView.image = UIImage(named: residentalTableViewData[collectionView.tag].imagesList[indexPath.row])
-        //let cellWidth = collectionView.bounds.width
-        //collectionCell.imageView.widthAnchor.constraint(equalToConstant: cellWidth).isActive = true
         
        
         return collectionCell
@@ -66,7 +64,7 @@ extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let currentIndex = Int(scrollView.contentOffset.x / scrollView.bounds.width)
-        //pageControl.currentPage = currentIndex
+        pageControl.currentPage = currentIndex
     }
 
     

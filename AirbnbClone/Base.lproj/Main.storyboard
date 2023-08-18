@@ -78,7 +78,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-8Q-pRp">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-8Q-pRp">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -127,15 +127,24 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-Xy-bU5">
+                                                    <rect key="frame" x="130" y="373" width="154" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="Td4-ua-zHr"/>
+                                                    </constraints>
+                                                </pageControl>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4EE-8Q-pRp" firstAttribute="leading" secondItem="t82-Hr-niz" secondAttribute="leading" id="4E2-GA-l8F"/>
                                                 <constraint firstItem="4EE-8Q-pRp" firstAttribute="top" secondItem="t82-Hr-niz" secondAttribute="top" id="74U-lV-jig"/>
+                                                <constraint firstItem="jn6-Xy-bU5" firstAttribute="leading" secondItem="t82-Hr-niz" secondAttribute="leadingMargin" constant="110" id="7vA-3c-6Sg"/>
                                                 <constraint firstAttribute="trailing" secondItem="pih-hj-3Xf" secondAttribute="trailing" constant="20" id="CpG-wn-lAK"/>
                                                 <constraint firstAttribute="trailing" secondItem="4EE-8Q-pRp" secondAttribute="trailing" id="MzG-QA-pBo"/>
                                                 <constraint firstAttribute="bottom" secondItem="pih-hj-3Xf" secondAttribute="bottom" constant="10" id="NBR-Ad-r0m" userLabel="bottom = Stack View.bottom +0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jn6-Xy-bU5" secondAttribute="trailing" constant="110" id="Og0-yi-ccA"/>
                                                 <constraint firstItem="pih-hj-3Xf" firstAttribute="top" secondItem="4EE-8Q-pRp" secondAttribute="bottom" constant="5" id="iOH-Zf-NuH"/>
                                                 <constraint firstItem="pih-hj-3Xf" firstAttribute="leading" secondItem="t82-Hr-niz" secondAttribute="leading" constant="20" id="wUz-Z8-c6N"/>
+                                                <constraint firstItem="pih-hj-3Xf" firstAttribute="top" secondItem="jn6-Xy-bU5" secondAttribute="bottom" constant="20" id="zel-hi-3ZF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,6 +153,7 @@
                                             <outlet property="dateLabel" destination="eo7-YG-zl5" id="Xnp-ge-f76"/>
                                             <outlet property="distanceLabel" destination="mqH-hv-w0u" id="aDT-qH-X3Q"/>
                                             <outlet property="locationAndRateLabel" destination="Dlr-27-yNM" id="PaY-oB-dXq"/>
+                                            <outlet property="pageControl" destination="jn6-Xy-bU5" id="Xqa-vh-GDI"/>
                                             <outlet property="priceLabel" destination="ijD-MQ-7oi" id="Scl-4G-fRf"/>
                                             <outlet property="titleLabel" destination="Nr9-g3-Fqh" id="Yxz-IW-Bnw"/>
                                         </connections>
