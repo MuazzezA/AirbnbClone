@@ -12,7 +12,17 @@ var residentalTableViewData = [
     Residential(title: "Sataplia Kulubesi", imagesList: ["img1","img2", "img3"], rate: 4.83, location: "Imereti, Gürcistan", date: "6 - 13 Eyl",distance: 603 , price: 2.922),
     
     Residential(title: "Cabana A Vaideni", imagesList: ["img4","img4", "img4","img4"],  location: "Vaideeni, Romanya", date: "31 Ağu - 5 Eyl", distance: 497, price: 11.236)
-    
+]
+
+var categoryList = [
+
+    Category(title: "Tekneler", image: "boat"),
+    Category(title: "Kamp", image: "camp"),
+    Category(title: "Malikaneler", image: "manor"),
+    Category(title: "Deniz Kıyısı", image: "next-sea"),
+    Category(title: "Küçük Ev", image: "small-house"),
+    Category(title: "Tropik", image: "tropic"),
+
 ]
 
 class ViewController: UIViewController {
@@ -20,6 +30,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     
     override func viewDidLoad() {
@@ -61,8 +72,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
-    
-    
-    
 }
 
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
+        let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as!CategoryCollectionViewCell
+        
+        cell.categoryImage.image = UIImage(named: categoryList[indexPath.row].image!)
+        cell.categoryText.text = categoryList[indexPath.row].title
+        
+        
+        return cell
+    }
+    
+}

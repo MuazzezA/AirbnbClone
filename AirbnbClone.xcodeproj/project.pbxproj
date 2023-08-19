@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F27278EB2A90DE140012936F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27278EA2A90DE140012936F /* Category.swift */; };
+		F27278ED2A90DE6B0012936F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27278EC2A90DE6B0012936F /* CategoryCollectionViewCell.swift */; };
 		F2A6DD982A9025630040E4BB /* CustomSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A6DD972A9025630040E4BB /* CustomSearchBar.xib */; };
 		F2A6DD9A2A9025D70040E4BB /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6DD992A9025D70040E4BB /* CustomSearchBar.swift */; };
 		F2CC2C822A881C1D00C3E805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC2C812A881C1D00C3E805 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F27278EA2A90DE140012936F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F27278EC2A90DE6B0012936F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2A6DD972A9025630040E4BB /* CustomSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchBar.xib; sourceTree = "<group>"; };
 		F2A6DD992A9025D70040E4BB /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		F2CC2C7E2A881C1D00C3E805 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F2CC2C9C2A8829B100C3E805 /* CollectionViewCell.swift */,
+				F27278EC2A90DE6B0012936F /* CategoryCollectionViewCell.swift */,
 			);
 			path = collectionview;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F2CC2CA12A88308700C3E805 /* Residential.swift */,
+				F27278EA2A90DE140012936F /* Category.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				F2CC2C862A881C1D00C3E805 /* ViewController.swift in Sources */,
 				F2CC2CA52A88484A00C3E805 /* CustomPageControl.swift in Sources */,
 				F2CC2C822A881C1D00C3E805 /* AppDelegate.swift in Sources */,
+				F27278EB2A90DE140012936F /* Category.swift in Sources */,
+				F27278ED2A90DE6B0012936F /* CategoryCollectionViewCell.swift in Sources */,
 				F2CC2CA22A88308700C3E805 /* Residential.swift in Sources */,
 				F2A6DD9A2A9025D70040E4BB /* CustomSearchBar.swift in Sources */,
 				F2CC2C842A881C1D00C3E805 /* SceneDelegate.swift in Sources */,
