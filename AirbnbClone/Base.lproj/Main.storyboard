@@ -319,9 +319,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.4347826086957" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="1974" y="-145"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="nf7-Fb-x8D">
             <objects>
                 <viewController id="aQs-iY-R0R" sceneMemberID="viewController">
@@ -331,11 +331,65 @@
                         <viewLayoutGuide key="safeArea" id="Fea-Mx-AkE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gN1-0U-2UN"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="gN1-0U-2UN">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.23529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FG4-wC-7bE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-277" y="731"/>
+            <point key="canvasLocation" x="-730" y="780"/>
+        </scene>
+        <!--Travels-->
+        <scene sceneID="35I-gu-T23">
+            <objects>
+                <viewController id="kWR-DI-EgS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MSK-1s-diK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XcY-pX-t5T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Travels" image="airbnb" id="oAE-Dh-pcb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFk-fx-afd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="779"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="6Ob-wo-W3a">
+            <objects>
+                <viewController id="etE-jN-giW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zei-7U-Mcn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4gk-NS-9v6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" image="message" catalog="system" id="CNY-Zc-Xo7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLo-Tp-v5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="779"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="hWy-vb-mWb">
+            <objects>
+                <viewController id="ucP-jK-hcU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrw-EL-lUE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="87H-9j-Qg6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="5U8-5S-11q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jk-hb-mgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="779"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BgN-xz-ct7">
@@ -346,20 +400,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.23529411759999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zY7-Cr-tcN"/>
                         <segue destination="aQs-iY-R0R" kind="relationship" relationship="viewControllers" id="Ufp-OQ-Wlk"/>
+                        <segue destination="kWR-DI-EgS" kind="relationship" relationship="viewControllers" id="ktH-pF-mTQ"/>
+                        <segue destination="etE-jN-giW" kind="relationship" relationship="viewControllers" id="7Ue-9n-eZm"/>
+                        <segue destination="ucP-jK-hcU" kind="relationship" relationship="viewControllers" id="cpj-Zp-CUy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFV-Ra-clM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="330" y="-145"/>
         </scene>
     </scenes>
     <resources>
+        <image name="airbnb" width="24" height="24"/>
         <image name="heart" width="64" height="64"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="map" width="800" height="800"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
