@@ -16,13 +16,14 @@ var residentalTableViewData = [
 
 var categoryList = [
 
-    Category(title: "Tekneler", image: "boat"),
-    Category(title: "Kamp", image: "camp"),
-    Category(title: "Malikaneler", image: "manor"),
-    Category(title: "Deniz Kıyısı", image: "next-sea"),
-    Category(title: "Küçük Ev", image: "small-house"),
-    Category(title: "Tropik", image: "tropic"),
-
+    Category(title: "Boats", image: "boat"),
+    Category(title: "Farms", image: "farm"),
+    Category(title: "Castles", image: "castle"),
+    Category(title: "Camping", image: "camp"),
+    Category(title: "Mansions", image: "manor"),
+    Category(title: "Beachfront", image: "next-sea"),
+    Category(title: "Tropical", image: "tropic"),
+    Category(title: "Desert", image: "desert"),
 ]
 
 class ViewController: UIViewController {
@@ -32,12 +33,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
+    @IBOutlet weak var categoryView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        categoryView.layer.shadowColor = UIColor.black.cgColor
+        categoryView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        
+        categoryView.layer.shadowRadius = 4
+        categoryView.layer.shadowOpacity = 0.3
         
     
     }
