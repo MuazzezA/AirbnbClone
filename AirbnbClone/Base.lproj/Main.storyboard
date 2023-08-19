@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="565" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-gw-Vqb">
-                                <rect key="frame" x="0.0" y="236" width="414" height="577"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="231" width="414" height="582"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="577" id="I9O-5f-AWq"/>
+                                    <constraint firstAttribute="height" constant="582" id="NC6-Sf-10r"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tablecell" id="g43-uq-Yj8" customClass="TableViewCell" customModule="AirbnbClone" customModuleProvider="target">
@@ -187,15 +187,15 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-vJ-5yO" customClass="CustomSearchBar" customModule="AirbnbClone" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="48" width="414" height="71"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="61"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr2-rM-jWD" userLabel="Category View">
-                                <rect key="frame" x="0.0" y="117" width="414" height="111"/>
+                                <rect key="frame" x="0.0" y="117" width="414" height="114"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-xw-vJv" userLabel="Category Collection View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bo4-Ub-1M2">
                                             <size key="itemSize" width="91" height="107"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -204,7 +204,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="TvT-U7-d6P" customClass="CategoryCollectionViewCell" customModule="AirbnbClone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="2" width="91" height="107"/>
+                                                <rect key="frame" x="0.0" y="3.5" width="91" height="107"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="107"/>
@@ -292,7 +292,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="Xr2-rM-jWD" secondAttribute="bottom" constant="8" symbolic="YES" id="3NA-RH-Cog"/>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ri-My-h1T"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="trailing" secondItem="Pxo-vJ-5yO" secondAttribute="trailing" id="71p-oL-NL9"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AMC-Kb-8H2"/>
@@ -305,7 +304,8 @@
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f81-To-oRY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Toj-gw-Vqb" secondAttribute="bottom" id="n9S-6x-hbj"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="117" id="qIh-Yr-T5o"/>
-                            <constraint firstAttribute="bottom" secondItem="Pxo-vJ-5yO" secondAttribute="bottom" constant="777" id="uKa-zi-VR5"/>
+                            <constraint firstItem="Xr2-rM-jWD" firstAttribute="top" secondItem="Pxo-vJ-5yO" secondAttribute="bottom" constant="8" id="qRC-Qc-e29"/>
+                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="Xr2-rM-jWD" secondAttribute="bottom" id="qlp-OT-31y"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="leading" secondItem="Pxo-vJ-5yO" secondAttribute="leading" id="v5r-Fv-m0T"/>
                         </constraints>
                     </view>

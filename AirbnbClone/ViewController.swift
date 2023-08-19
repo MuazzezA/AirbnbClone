@@ -44,9 +44,12 @@ class ViewController: UIViewController {
         categoryView.layer.shadowColor = UIColor.black.cgColor
         categoryView.layer.shadowOffset = CGSize(width: 0, height: 4)
         
-        categoryView.layer.shadowRadius = 4
-        categoryView.layer.shadowOpacity = 0.3
+        categoryView.layer.shadowRadius = 3
+        categoryView.layer.shadowOpacity = 0.2
         
+        let shadowRect = CGRect(x: 0, y: categoryView.bounds.height - 3, width: categoryView.bounds.width, height: 3)
+                categoryView.layer.shadowPath = UIBezierPath(rect: shadowRect).cgPath
+                
     
     }
 
