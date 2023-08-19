@@ -104,7 +104,7 @@ class CustomSearchBar : UIView {
     
         let label1 = UILabel()
         label1.text = "Where to ?"
-        label1.font = UIFont.boldSystemFont(ofSize: 18)
+        label1.font = UIFont.boldSystemFont(ofSize: 16)
         label1.textColor = UIColor.black
         
         label1.translatesAutoresizingMaskIntoConstraints = false
@@ -112,13 +112,13 @@ class CustomSearchBar : UIView {
         
         let label2 = UILabel()
         label2.text = "Anywhere · Any Week 2 · quests"
-        label2.font = UIFont.systemFont(ofSize: 14)
+        label2.font = UIFont.systemFont(ofSize: 12)
         label2.textColor = UIColor.darkGray
         label2.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(label2)
         textField.addSubview(stackView)
         NSLayoutConstraint.activate([
-            stackView.centerXAnchor.constraint(equalTo: textField.leadingAnchor, constant: 160),
+            stackView.centerXAnchor.constraint(equalTo: textField.leadingAnchor, constant: 140),
             stackView.centerYAnchor.constraint(equalTo: textField.centerYAnchor)
         ])
     }

@@ -17,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="575" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-gw-Vqb">
-                                <rect key="frame" x="0.0" y="248" width="414" height="565"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="565" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-gw-Vqb">
+                                <rect key="frame" x="0.0" y="192" width="414" height="621"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="621" id="1mP-W1-0TO"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tablecell" id="g43-uq-Yj8" customClass="TableViewCell" customModule="AirbnbClone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="575"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="565"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g43-uq-Yj8" id="t82-Hr-niz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="575"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="565"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pih-hj-3Xf">
@@ -143,6 +146,13 @@
                                                         <constraint firstAttribute="height" constant="26" id="Td4-ua-zHr"/>
                                                     </constraints>
                                                 </pageControl>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-Wl-zoF">
+                                                    <rect key="frame" x="354" y="31" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="e8s-c0-MFJ"/>
+                                                        <constraint firstAttribute="width" constant="24" id="gUK-UU-f6d"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4EE-8Q-pRp" firstAttribute="leading" secondItem="t82-Hr-niz" secondAttribute="leading" id="4E2-GA-l8F"/>
@@ -151,7 +161,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="4EE-8Q-pRp" secondAttribute="trailing" id="MzG-QA-pBo"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="jn6-Xy-bU5" secondAttribute="trailing" constant="110" id="Og0-yi-ccA"/>
                                                 <constraint firstItem="4EE-8Q-pRp" firstAttribute="top" secondItem="t82-Hr-niz" secondAttribute="topMargin" constant="-11" id="TLn-hK-om3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FPq-Wl-zoF" secondAttribute="trailing" constant="16" id="blw-Y6-NDE"/>
                                                 <constraint firstItem="pih-hj-3Xf" firstAttribute="top" secondItem="4EE-8Q-pRp" secondAttribute="bottom" constant="5" id="pIk-u0-7Hw"/>
+                                                <constraint firstItem="FPq-Wl-zoF" firstAttribute="top" secondItem="t82-Hr-niz" secondAttribute="topMargin" constant="20" id="rcv-T8-sUq"/>
                                                 <constraint firstItem="pih-hj-3Xf" firstAttribute="leading" secondItem="t82-Hr-niz" secondAttribute="leading" constant="20" id="wUz-Z8-c6N"/>
                                                 <constraint firstItem="pih-hj-3Xf" firstAttribute="top" secondItem="jn6-Xy-bU5" secondAttribute="bottom" constant="20" id="zel-hi-3ZF"/>
                                             </constraints>
@@ -192,16 +204,15 @@
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ri-My-h1T"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="trailing" secondItem="Pxo-vJ-5yO" secondAttribute="trailing" id="71p-oL-NL9"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AMC-Kb-8H2"/>
+                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="Xr2-rM-jWD" secondAttribute="bottom" id="COQ-c3-qtP"/>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ors-la-iTt"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="THF-vW-vcD"/>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WFf-fE-rFV"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bh2-PG-gAh"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f81-To-oRY"/>
-                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="Xr2-rM-jWD" secondAttribute="bottom" constant="56" id="fy6-Bt-Vx0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Toj-gw-Vqb" secondAttribute="bottom" id="n9S-6x-hbj"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="117" id="qIh-Yr-T5o"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="leading" secondItem="Pxo-vJ-5yO" secondAttribute="leading" id="v5r-Fv-m0T"/>
-                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="zwo-sF-cgc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="iKk-hf-iwJ"/>
@@ -251,6 +262,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" width="64" height="64"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
