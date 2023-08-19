@@ -7,11 +7,21 @@
 
 import UIKit
 
+
 var residentalTableViewData = [
     
-    Residential(title: "Sataplia Kulubesi", imagesList: ["img1","img2", "img3"], rate: 4.83, location: "Imereti, Gürcistan", date: "6 - 13 Eyl",distance: 603 , price: 2.922),
+    Residential(title: "Turkey House", imagesList: ["t1","t3", "t2","t4", "t5"],rate: 4.97,   location: "İçmeler Turkey", date: "Sep 3 - 5", distance: 357, price: 3.665),
     
-    Residential(title: "Cabana A Vaideni", imagesList: ["img4","img4", "img4","img4"],  location: "Vaideeni, Romanya", date: "31 Ağu - 5 Eyl", distance: 497, price: 11.236)
+    Residential(title: "Camping", imagesList: ["k1","k2","k3"], rate: 4.83, location: "Sohodol, Romania", date: "Aug 23 - 28",distance: 603 , price: 4.184),
+    
+    Residential(title: "Historic Luxury Castle", imagesList: ["c1", "c2", "c3", "c4", "c5"],  rate:4.77 , location: "Roseto Capo Spulico, Italy", date: "Aug 27 - Sep 1", distance: 1084, price: 5.037),
+    
+    Residential(title: "BALIAN TREEHOUSE w beautiful pool", imagesList: ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],  rate:4.85 , location: "Balian Beach, Indonesia", date: "Nov 3 - 9", distance: 14362, price: 337)
+    
+     
+    
+   
+
 ]
 
 var categoryList = [
@@ -74,9 +84,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.location.text = "\(item.location)"
         cell.rate.text = "\(item.rate ?? 0.0)"
         cell.titleLabel.text = item.title
-        cell.distanceLabel.text = "\(item.distance) km uzakta"
+        cell.distanceLabel.text = "\(item.distance) kilometers away"
         cell.dateLabel.text = item.date
-        cell.priceLabel.text = "\(item.price) ₺ gece"
+        cell.priceLabel.text = "\(item.price) $ night"
         
         cell.imageList = item.imagesList
        
