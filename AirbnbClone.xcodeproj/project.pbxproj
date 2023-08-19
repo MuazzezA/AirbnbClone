@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2A6DD982A9025630040E4BB /* CustomSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A6DD972A9025630040E4BB /* CustomSearchBar.xib */; };
+		F2A6DD9A2A9025D70040E4BB /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6DD992A9025D70040E4BB /* CustomSearchBar.swift */; };
 		F2CC2C822A881C1D00C3E805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC2C812A881C1D00C3E805 /* AppDelegate.swift */; };
 		F2CC2C842A881C1D00C3E805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC2C832A881C1D00C3E805 /* SceneDelegate.swift */; };
 		F2CC2C862A881C1D00C3E805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC2C852A881C1D00C3E805 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2A6DD972A9025630040E4BB /* CustomSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchBar.xib; sourceTree = "<group>"; };
+		F2A6DD992A9025D70040E4BB /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		F2CC2C7E2A881C1D00C3E805 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CC2C812A881C1D00C3E805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2CC2C832A881C1D00C3E805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2A6DD962A90254C0040E4BB /* searchbar */ = {
+			isa = PBXGroup;
+			children = (
+				F2A6DD972A9025630040E4BB /* CustomSearchBar.xib */,
+			);
+			path = searchbar;
+			sourceTree = "<group>";
+		};
 		F2CC2C752A881C1D00C3E805 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 				F2CC2C812A881C1D00C3E805 /* AppDelegate.swift */,
 				F2CC2C832A881C1D00C3E805 /* SceneDelegate.swift */,
 				F2CC2C852A881C1D00C3E805 /* ViewController.swift */,
+				F2A6DD992A9025D70040E4BB /* CustomSearchBar.swift */,
 				F2CC2CA02A88303600C3E805 /* data */,
 				F2CC2C952A88276600C3E805 /* ui */,
 				F2CC2C872A881C1D00C3E805 /* Main.storyboard */,
@@ -80,6 +93,7 @@
 		F2CC2C952A88276600C3E805 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				F2A6DD962A90254C0040E4BB /* searchbar */,
 				F2CC2CA32A88482700C3E805 /* pagecontrol */,
 				F2CC2C972A88277700C3E805 /* collectionview */,
 				F2CC2C962A88277000C3E805 /* tableview */,
@@ -179,6 +193,7 @@
 			files = (
 				F2CC2C8E2A881C1E00C3E805 /* LaunchScreen.storyboard in Resources */,
 				F2CC2C8B2A881C1E00C3E805 /* Assets.xcassets in Resources */,
+				F2A6DD982A9025630040E4BB /* CustomSearchBar.xib in Resources */,
 				F2CC2C892A881C1D00C3E805 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +211,7 @@
 				F2CC2CA52A88484A00C3E805 /* CustomPageControl.swift in Sources */,
 				F2CC2C822A881C1D00C3E805 /* AppDelegate.swift in Sources */,
 				F2CC2CA22A88308700C3E805 /* Residential.swift in Sources */,
+				F2A6DD9A2A9025D70040E4BB /* CustomSearchBar.swift in Sources */,
 				F2CC2C842A881C1D00C3E805 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
