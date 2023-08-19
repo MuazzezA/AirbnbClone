@@ -27,6 +27,7 @@ class CustomSearchBar : UIView {
     }
        
     func viewInit (){
+        
         let screenWidth = UIScreen.main.bounds.width
         let textFieldWidth: CGFloat = screenWidth*0.8
         let textFieldHeight: CGFloat = 60
@@ -52,14 +53,79 @@ class CustomSearchBar : UIView {
 
 
         textField.layer.cornerRadius = 30.0
-        textField.backgroundColor = .systemPink
+        textField.backgroundColor = .white
+        textField.layer.shadowColor = UIColor.black.cgColor
+        textField.layer.shadowOpacity = 0.2
+        textField.layer.shadowOffset = CGSize(width: 0, height: 2)
+        textField.layer.shadowRadius = 3
+        
+       
 
         let xibView = Bundle.main.loadNibNamed ("CustomSearchBar", owner: self, options: nil)![0] as! UIView
         xibView.frame = self.bounds
         addSubview(xibView)
 
         xibView.addSubview(textField)
-
+        addEqualizerIcon(to: textField)
+        addTextWithStack(to: textField)
 
     }
+    
+    
+    
+    func addEqualizerIcon(to textField: UITextField) {
+        let equalizerIconImageView = UIImageView(image: UIImage(named: "equalizer"))
+        equalizerIconImageView.contentMode = .center
+        equalizerIconImageView.frame = CGRect(x: 0, y: 0, width: 36, height: 36)
+      
+        let circleView = UIView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        circleView.layer.cornerRadius = 15
+        circleView.backgroundColor = .white
+        circleView.layer.shadowColor = UIColor.black.cgColor
+        circleView.layer.shadowOpacity = 0.2
+        circleView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        circleView.layer.shadowRadius = 3
+        
+        equalizerIconImageView.center = CGPoint(x: circleView.frame.width / 2, y: circleView.frame.height / 2)
+  
+        circleView.addSubview(equalizerIconImageView)
+        textField.rightView = circleView
+        textField.rightViewMode = .always
+    }
+    
+    
+    func addTextWithStack(to textField: UITextField) {
+
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .leading
+        stackView.spacing = 2
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+    
+        let label1 = UILabel()
+        label1.text = "Where to ?"
+        label1.font = UIFont.boldSystemFont(ofSize: 18)
+        label1.textColor = UIColor.black
+        
+        label1.translatesAutoresizingMaskIntoConstraints = false
+        stackView.addArrangedSubview(label1)
+        
+        let label2 = UILabel()
+        label2.text = "Anywhere · Any Week 2 · quests"
+        label2.font = UIFont.systemFont(ofSize: 14)
+        label2.textColor = UIColor.darkGray
+        label2.translatesAutoresizingMaskIntoConstraints = false
+        stackView.addArrangedSubview(label2)
+        textField.addSubview(stackView)
+        NSLayoutConstraint.activate([
+            stackView.centerXAnchor.constraint(equalTo: textField.leadingAnchor, constant: 160),
+            stackView.centerYAnchor.constraint(equalTo: textField.centerYAnchor)
+        ])
+    }
+
+    
+
+
+    
+    
 }

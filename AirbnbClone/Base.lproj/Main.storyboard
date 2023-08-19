@@ -184,25 +184,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr2-rM-jWD">
                                 <rect key="frame" x="0.0" y="117" width="414" height="75"/>
                                 <color key="backgroundColor" red="0.82618109610000001" green="0.86399027179999999" blue="0.98743556700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="1dB-x4-sCA"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ri-My-h1T"/>
+                            <constraint firstItem="Xr2-rM-jWD" firstAttribute="trailing" secondItem="Pxo-vJ-5yO" secondAttribute="trailing" id="71p-oL-NL9"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AMC-Kb-8H2"/>
-                            <constraint firstItem="Xr2-rM-jWD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Or1-EU-LOb"/>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ors-la-iTt"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="THF-vW-vcD"/>
                             <constraint firstItem="Pxo-vJ-5yO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WFf-fE-rFV"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bh2-PG-gAh"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f81-To-oRY"/>
-                            <constraint firstItem="Xr2-rM-jWD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hXx-pw-gMJ"/>
+                            <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="Xr2-rM-jWD" secondAttribute="bottom" constant="56" id="fy6-Bt-Vx0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Toj-gw-Vqb" secondAttribute="bottom" id="n9S-6x-hbj"/>
                             <constraint firstItem="Xr2-rM-jWD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="117" id="qIh-Yr-T5o"/>
+                            <constraint firstItem="Xr2-rM-jWD" firstAttribute="leading" secondItem="Pxo-vJ-5yO" secondAttribute="leading" id="v5r-Fv-m0T"/>
                             <constraint firstItem="Toj-gw-Vqb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="zwo-sF-cgc"/>
                         </constraints>
                     </view>
